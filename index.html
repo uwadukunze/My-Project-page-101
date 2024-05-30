@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uwadukunze Ivan - Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: #007b7f;
+            color: #fff;
+            padding: 20px 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background: #007b7f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .certificates img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 10px;
+        }
+        .dropdown {
+            cursor: pointer;
+            padding: 10px;
+            background: #007b7f;
+            color: #fff;
+            border: none;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+        }
+        .dropdown-content {
+            display: none;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border: 1px solid #ddd;
+            background: #fff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .dropdown-content.show {
+            display: block;
+            max-height: 200px;
+        }
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .portfolio-gallery .project {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .portfolio-gallery .project img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .portfolio-gallery .project p {
+            text-align: center;
+        }
+        a[download] {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #007b7f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        a[download]:hover {
+            background: #005f5f;
+        }
+    </style>
+    <script>
+        function toggleDropdown() {
+            var content = document.getElementById("dropdown-content");
+            if (content.classList.contains("show")) {
+                content.classList.remove("show");
+            } else {
+                content.classList.add("show");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>UWADUKUNZE Ivan</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container" id="about">
+        <h2>About Me</h2>
+        <p>I am Uwadukunze Ivan, an experienced professional with a passion for digital marketing, SEO content creation, and logistics management. My diverse background enables me to approach projects with a unique perspective, blending technical proficiency with creative strategy.</p>
+        <p>I have a proven track record of writing high-quality SEO content. Here are a few examples of my work:</p>
+        <ul>
+            <li><a href="https://docs.google.com/document/d/1rMfPObOutiUP4aEpgv3lBXVsePmE12lMOyI39q4IyI8/edit?usp=sharing" target="_blank">Sample 1</a></li>
+            <li><a href="https://docs.google.com/document/d/1IoPQRtId9kgtjoOy508IL8VJ7a8jsfRTC9xWNOlJszw/edit?usp=sharing" target="_blank">Sample 2</a></li>
+            <li><a href="https://docs.google.com/document/d/1XCI9usLlk2xI2_znzpxSzmn7qwnfZKmjFFXDzmqumIg/edit?usp=sharing" target="_blank">Sample 3</a></li>
+        </ul>
+        <p><a href="https://docs.google.com/document/d/1uFVFd7v9lMncxHIyIM0Uz4HYco5PvIIvT1vKxrGS210/export?format=pdf" download>Download My Resume</a></p>
+    </section>
+
+    <section class="container" id="projects">
+        <h2>Projects</h2>
+        <button class="dropdown" onclick="toggleDropdown()">View Project Samples</button>
+        <ul class="dropdown-content" id="dropdown-content">
+            <li><a href="https://docs.google.com/document/d/1rMfPObOutiUP4aEpgv3lBXVsePmE12lMOyI39q4IyI8/edit?usp=sharing" target="_blank">Sample Project 1</a></li>
+            <li><a href="https://docs.google.com/document/d/1IoPQRtId9kgtjoOy508IL8VJ7a8jsfRTC9xWNOlJszw/edit?usp=sharing" target="_blank">Sample Project 2</a></li>
+            <li><a href="https://docs.google.com/document/d/1XCI9usLlk2xI2_znzpxSzmn7qwnfZKmjFFXDzmqumIg/edit?usp=sharing" target="_blank">Sample Project 3</a></li>
+        </ul>
+        <div class="portfolio-gallery">
+            <div class="project">
+                <img src="path/to/project1.jpg" alt="Project 1">
+                <p>Project 1 Description</p>
+            </div>
+            <div class="project">
+                <img src="path/to/project2.jpg" alt="Project 2">
+                <p>Project 2 Description</p>
+            </div>
+            <div class="project">
+                <img src="path/to/project3.jpg" alt="Project 3">
+                <p>Project 3 Description</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Email Marketing Platforms</li>
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Content Creation</li>
+            <li>Digital Marketing</li>
+            <li>Keyword Research</li>
+            <li>Data Analysis</li>
+        </ul>
+    </section>
+
+    <section class="container" id="certifications">
+        <h2>Certifications</h2>
+        <h3>SEO and Content Marketing Extern</h3>
+        <p><strong>Institution:</strong> Extern</p>
+        <p><strong>Date:</strong> June 2022</p>
+    </section>
+
+    <section class="container" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:iuwadukunze@gmail.com">iuwadukunze@gmail.com</a></p>
+        <p>Phone: +250786399699</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Uwadukunze Ivan</p>
+    </footer>
+</body>
+</html>
